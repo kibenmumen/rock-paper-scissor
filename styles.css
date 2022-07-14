@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Orbitron:wght@700&family=Poppins:wght@200&family=Roboto&family=Source+Code+Pro:ital,wght@1,200&display=swap');
+:root {
+    --animate-duration: 500ms;
+    --animate-delay: 0.9s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(40, 40, 40); */
+    color: white;
+    user-select: none;
+
+}
+
+body{
+    background-color: rgb(36, 36, 36);
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    padding: 3em;
+    flex-wrap: wrap;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+}
+
+#round {
+    display: flex;
+    align-items: flex-end;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+/*SCORE*/
+#score {
+    padding: 6em 0 3em 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5em;
+}
+
+#human,
+#computer,
+#result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+#human {
+    /* font-family: 'Baloo 2', cursive; */
+    font-size: 28px;
+}
+
+#computer {
+    /* font-family: 'Source Code Pro', monospace; */
+    font-size: 28px;
+}
+
+#result-text {
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 30px;
+}
+
+/*FIGHT*/
+#fight {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 3em 0em;
+}
+
+#human-hand,
+#computer-hand {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*CHOICE*/
+#choices {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 2em;
+
+}
+
+/* #rock,
+#paper,
+#scissor {
+    pointer-events: none;
+    background-color: #5e2398;
+    color: white;
+    box-shadow: 0 5px 0 #5d239862;
+    transition: transform 0.1s ease-out, box-shadow;
+    border-radius: 5px;
+    padding: 1em;
+    width: 5em;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+}
+
+#rock:active,
+#paper:active,
+#scissor:active {
+    box-shadow: none;
+    transform: translateY(5px)
+} */
+
+ #play-again {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+
+}
+
+/* #btn-play-again {
+    background-color: #5e2398;
+    color: white;
+    box-shadow: 0 5px 0 #5d239862;
+    border-radius: 5px;
+    padding: 1em;
+    width: 5em;
+    user-select: none;
+} */ 
+
+.hide {
+    visibility: collapse;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.tiktokButton {
+    position: relative;
+    margin: auto;
+    padding: 0.6rem 4rem;
+    overflow: hidden;
+
+    border: 1px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+
+    user-select: none;
+    cursor: pointer;
+
+    transition: 0.4s ease-in;
+}
+
+.tiktokButton::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -70px;
+    width: 200%;
+    height: 350%;
+    background-color: white;
+    transform: rotate(40deg) translateY(200px);
+    transition: 0.4s ease-in;
+    z-index: -1;
+}
+
+.tiktokButton:hover::before {
+    transform: rotate(20deg) translateY(0);
+}
+
+.tiktokButton:hover {
+    color: black;
+    box-shadow: -2px -2px 0 2px #25F4FF,
+        2px 2px 0 2px #EE3559;
+
+}
+

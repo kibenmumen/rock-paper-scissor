@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script.js"></script>
-    <title>Test / Practice</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Rock Paper Scissor</title>
 </head>
+
 <body>
-    <p>Hi</p>
+    <header>
+        <h1>ROCK PAPER SCISSOR!</h1>
+        <h2 id="round">ROUND 1</h2>
+    </header>
+    <main>
+        <div id="score">
+            <div id="human">
+                <h2>Human</h2>
+                <h3 id="score_human">0</h3>
+            </div>
+            <div id="computer">
+                <h2>Computer</h2>
+                <h3 id="score_computer">0</h3>
+            </div>
+        </div>
+        <div id="result">
+            <p id="result-text"></p>
+        </div>
+        <div id="fight">
+            <div id="human-hand">
+                <img src="./images/star.png" id="humChoice" width="200" height="200">
+            </div>
+            <div id="human-hand">
+                <img src="./images/star.png" id="comChoice" width="200" height="200">
+            </div>
+        </div>
+        <div id="choices" class="visible">
+            <div id="rock" class="tiktokButton">ROCK</div>
+            <div id="paper" class="tiktokButton">PAPER</div>
+            <div id="scissor" class="tiktokButton">SCISSOR</div>
+        </div>
+        <div id="play-again" class="hide">
+            <div id="btn-play-again" class="tiktokButton">Play Again!</div>
+        </div>
+    </main>
+
+
 </body>
+
 </html>
